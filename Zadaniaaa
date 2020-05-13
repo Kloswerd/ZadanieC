@@ -1,1 +1,11 @@
-Using kyuspace
+using System;
+
+using static lib;
+
+class MainClass {
+  public static void Main (string[] args) {
+    Console.WriteLine ("Hello World");
+  Console.WriteLine(lib.sum(1,2));
+  Console.WriteLine(st1("STOP"));
+  }
+}
