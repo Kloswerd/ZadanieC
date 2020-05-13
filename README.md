@@ -1,0 +1,2 @@
+# ZadanieC
+Я изучаю Git
