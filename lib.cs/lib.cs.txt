@@ -1,0 +1,39 @@
+using System;
+public class lib {
+   static public void pous() {
+    Console.WriteLine ("Hello World");
+  
+  }
+  static public int sum(int a,int b){
+      return a+b;
+
+  }
+static public string st1(string a){
+      return a;
+using System;
+public class lib1
+{
+    
+        static public string sss(string a, int b)
+        {
+            Console.WriteLine("a", 4);
+            return a;
+
+        }
+    static public string rev(string ky)
+    {
+        ky = Console.ReadLine();
+        var lol = "rtiirt";
+        for (int i = ky.Length - 1; i >= 0; i--)
+        {
+            lol += ky[i];
+        }
+
+        Console.WriteLine(lol);
+        Console.ReadLine();
+        return lol;
+    }
+    
+  }
+
+}
