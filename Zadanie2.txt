@@ -1,0 +1,136 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Первое
+
+             string riko;
+              Console.WriteLine("Введите строку");
+              riko = Console.ReadLine();
+            /*  int s = 0;
+
+              for (int i = 0; i < riko.Length; i++)
+              {
+                  if (riko[i] == 'f')
+                  {
+                      s++;
+                  }
+                      if (s >= 1)
+                      {
+                          Console.WriteLine("1");
+                      }
+                      else if (s<1)
+                      {
+                          Console.WriteLine("2");
+                      }
+
+              }
+              Console.ReadKey();
+          }
+          */
+         
+/*
+второе
+using System;
+using System.Collections.Generic;
+ 
+namespace TranslatorV1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Translit translit = new Translit();
+            // входная строка
+            string TextV1 = Console.ReadLine();
+            // строка на выходе после перевода
+            string Perevod = translit.TranslitFileName(TextV1);
+            Console.WriteLine("Текст переведен \'{0}\'", Perevod);
+            Console.ReadLine();
+        }
+ 
+        public class Translit
+        {
+            // создаем индексатор командой Dictionary и заполняем словарь
+            Dictionary<string, string> dictionaryChar = new Dictionary<string, string>()
+            {
+                {"а","a"},
+                {"б","b"},
+                {"в","v"},
+                {"г","g"},
+                {"д","d"},
+                {"е","e"},
+                {"ё","yo"},
+                {"ж","zh"},
+                {"з","z"},
+                {"и","i"},
+                {"й","y"},
+                {"к","k"},
+                {"л","l"},
+                {"м","m"},
+                {"н","n"},
+                {"о","o"},
+                {"п","p"},
+                {"р","r"},
+                {"с","s"},
+                {"т","t"},
+                {"у","u"},
+                {"ф","f"},
+                {"х","h"},
+                {"ц","ts"},
+                {"ч","ch"},
+                {"ш","sh"},
+                {"щ","sch"},
+                {"ъ","'"},
+                {"ы","yi"},
+                {"ь",""},
+                {"э","e"},
+                {"ю","yu"},
+                {"я","ya"}
+            };
+            public string TranslitFileName(string source)
+            {
+                var result = "";
+                // для поиска символов подлежащих замене
+                foreach (var dobav in source)
+                {
+                    var sss = "";
+                    // берём каждый символ строки и проверяем его на нахождение его в словаре для замены
+                    //берем значение из ключа индексатора Dictionary
+                    if (dictionaryChar.TryGetValue(dobav.ToString(), out sss))
+                    {
+                        result += sss;
+                    }
+                    // иначе добавляем тот же символ
+                    else result += dobav;
+                }
+                return result;
+            }
+        }
+    }
+}
+*/
+
+
+
+
+            //Третье
+
+            /*for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == 'h')
+                {
+                    Console.WriteLine(str.Replace("h", "H"));
+                }   
+
+            }    */
+        }
+    }
+}
