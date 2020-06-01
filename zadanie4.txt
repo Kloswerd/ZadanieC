@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp35
+{
+    class Collekciya
+    {
+        static void Main(string[] args)
+        {
+            List<int> col = new List<int>();
+            col.Add(1);
+            col.Add(2);
+            col.Add(3);
+            col.Add(4);
+            col.Add(5);
+            col.Add(6);
+            col.Add(7);
+            col.Add(8);
+            col.Add(9);
+            col.Add(10);
+            col.Add(11);
+            col.Add(12);
+            col.Add(13);
+            col.Add(14);
+            col.Add(15);
+
+            foreach (var item in col)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            Dictionary<int, string> coll = new Dictionary<int, string>()
+            {
+                { 1, "Oleg" },
+                { 2, "Sergey" },
+                { 3, "Ivan" },
+                { 4, "Timur" },
+            };
+            coll.Add(5, "Daniil");
+            foreach(var item in coll)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+}
